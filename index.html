@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<!-- Theme -->
+		<link rel="stylesheet" href="css/theme.css">
+	</head>
+
+	<body>
+		<div id="content" class="container container-fluid">
+			<div class="row">
+				<h1 class="text-center">Wikilink Search</h1>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12 form-group">
+			  		<label for="src">From Article:</label>
+				  	<input type="text" class="form-control" id="src">
+				  	<label for="dst">To Article:</label>
+				  	<input type="text" class="form-control" id="dst">
+					<button id="search" type="button" class="btn btn-primary btn-lg margin-top-05">Start Searching</button>
+				</div>
+			</div>
+
+			<div class="row margin-top-10">
+				<div class="col-xs-6">
+					<table id="left" class="table table-hover table-striped table-condensed table-bordered">
+						<thead>
+				      		<tr>
+				        		<th>Article</th>
+				     		</tr>	
+				    	</thead>
+					</table>
+				</div>
+
+				<div class="col-xs-6">
+					<table id="right" class="table table-hover table-striped table-condensed table-bordered">
+						<thead>
+				      		<tr>
+				        		<th>Article</th>
+				     		</tr>	
+				    	</thead>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<!-- jQuery used by Bootstrap -->
+	<script src="https://code.jquery.com/jquery-1.12.0.min.js">
+	</script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">
+	</script>
+
+	<script src="js/jsonp.js"></script>
+	<script src="js/wikilink.js"></script>
+</html>
